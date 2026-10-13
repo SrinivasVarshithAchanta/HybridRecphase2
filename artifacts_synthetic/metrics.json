@@ -1,0 +1,137 @@
+{
+  "run_mode": "generated_dataset_evaluation",
+  "dataset": {
+    "source": "synthetic (derived from Amazon Electronics catalog metadata)",
+    "n_users": 10000,
+    "n_items": 61028,
+    "train_rows": 300665,
+    "test_rows": 100039,
+    "split": "synthetic_held_out",
+    "split_type": "synthetic_multi_held_out"
+  },
+  "validated_temporal": {
+    "split": "synthetic_multi_held_out",
+    "run_mode": "generated_dataset_evaluation",
+    "n_users": 10000,
+    "n_items": 61028,
+    "train_rows": 300665,
+    "test_rows": 100039,
+    "n_eval_users": 10000,
+    "eval_mode": "all_test_users",
+    "interaction_mode": "weighted_confidence",
+    "best_among_tested": "Preference-Aware Hybrid",
+    "metrics": {
+      "Random": {
+        "precision": 0.00014000000000000001,
+        "recall": 0.00014247474747474745,
+        "accuracy": 0.0014,
+        "ndcg": 0.00013985052288563346,
+        "n_users": 10000,
+        "mean_relevant_items": 10.0039
+      },
+      "Popularity": {
+        "precision": 0.0003500000000000001,
+        "recall": 0.00036911616161616154,
+        "accuracy": 0.0023,
+        "ndcg": 0.0003693659087121386,
+        "n_users": 10000,
+        "mean_relevant_items": 10.0039
+      },
+      "CF": {
+        "precision": 0.18705999999999903,
+        "recall": 0.18738926767676667,
+        "accuracy": 0.4563,
+        "ndcg": 0.21464463014388513,
+        "n_users": 10000,
+        "mean_relevant_items": 10.0039
+      },
+      "Semantic": {
+        "precision": 0.004040000000000025,
+        "recall": 0.0040306060606060705,
+        "accuracy": 0.0365,
+        "ndcg": 0.0041723794479347435,
+        "n_users": 10000,
+        "mean_relevant_items": 10.0039
+      },
+      "Hybrid": {
+        "precision": 0.15191999999999947,
+        "recall": 0.1519084343434313,
+        "accuracy": 0.5229,
+        "ndcg": 0.17155911112033978,
+        "n_users": 10000,
+        "mean_relevant_items": 10.0039
+      },
+      "Preference-Aware Hybrid": {
+        "precision": 0.8721999999999777,
+        "recall": 0.87916366161614,
+        "accuracy": 0.9772,
+        "ndcg": 0.9141778494202408,
+        "n_users": 10000,
+        "mean_relevant_items": 10.0039
+      }
+    },
+    "lift": {
+      "Random": {
+        "vs_random": 1.0,
+        "vs_popularity": 0.6086956521739131
+      },
+      "Popularity": {
+        "vs_random": 1.6428571428571428,
+        "vs_popularity": 1.0
+      },
+      "CF": {
+        "vs_random": 325.92857142857144,
+        "vs_popularity": 198.3913043478261
+      },
+      "Semantic": {
+        "vs_random": 26.07142857142857,
+        "vs_popularity": 15.869565217391303
+      },
+      "Hybrid": {
+        "vs_random": 373.5,
+        "vs_popularity": 227.34782608695653
+      },
+      "Preference-Aware Hybrid": {
+        "vs_random": 698.0,
+        "vs_popularity": 424.8695652173913
+      }
+    },
+    "dataset_summary": {
+      "raw_rows": 400704,
+      "rows_after_merge": 400704,
+      "rows_after_kcore": 400704,
+      "users_raw": 10000,
+      "items_raw": 61028,
+      "users_after_kcore": 10000,
+      "items_after_kcore": 61028,
+      "train_rows": 300665,
+      "test_rows": 100039,
+      "train_users": 10000,
+      "train_items": 56082,
+      "candidate_catalog_size": 61028,
+      "reachable_test_rows": 100039,
+      "reachable_test_fraction": 1.0,
+      "warm_test_rows": 98223,
+      "cold_test_rows": 1816,
+      "warm_test_fraction": 0.9818470796389408,
+      "min_user_count": 1,
+      "min_item_count": 1,
+      "source_lines": null,
+      "source": "synthetic"
+    },
+    "random_expected_rate_at_10": 0.0001638592121649079,
+    "als_device": "cpu",
+    "default_alpha": 0.2,
+    "cool_user_threshold": 5,
+    "item_coverage": {},
+    "score_scales": {},
+    "eval_config": {
+      "k": 10,
+      "batch_size": 1024,
+      "seed": 42
+    }
+  },
+  "created_utc": "2026-10-13T06:04:39.989192+00:00",
+  "panel_metrics": {},
+  "conclusion": "Generated dataset evaluation with multiple held-out items per user."
+}

@@ -1,0 +1,38 @@
+# Amazon Electronics dumps (too large for GitHub)
+Electronics_5.json
+meta_Electronics.json
+*.json.gz
+*.gz
+backup dataset/
+
+# Caches and local model-prep byproducts
+validation_cache/
+artifacts*/
+image_cache/
+image_cache*/
+**/__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+.freebuff/
+
+# Logs and generated run output
+*.log
+*.err
+smoke_panel.log
+validation_results.json
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Local reports / bulky presentation exports
+*.pptx
+*.ipynb
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

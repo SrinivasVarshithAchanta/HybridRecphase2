@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-10-13T06:05:10.858415+00:00",
+  "config": {
+    "n_users": 10000,
+    "min_train_interactions": 20,
+    "max_train_interactions": 40,
+    "min_test_interactions": 8,
+    "max_test_interactions": 12,
+    "noise_rate": 0.05,
+    "seed": 42
+  },
+  "dataset_summary": {
+    "total_interactions": 400704,
+    "train_interactions": 300665,
+    "test_interactions": 100039,
+    "n_users": 10000,
+    "n_products": 61028,
+    "noise_interactions": 17408,
+    "avg_train_per_user": 30.1,
+    "avg_test_per_user": 10.0
+  },
+  "source": "synthetic (derived from Amazon Electronics catalog metadata)",
+  "run_mode": "generated_dataset_evaluation"
+}

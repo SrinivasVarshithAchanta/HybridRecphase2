@@ -1,0 +1,17 @@
+fastapi==0.115.6
+uvicorn==0.32.1
+pytest==8.3.4
+pandas==2.2.3
+numpy==1.26.4
+scipy==1.13.1
+scikit-learn==1.5.2
+implicit==0.7.3
+sentence-transformers==3.3.1
+tqdm==4.67.1
+pyarrow==18.1.0
+# Vision / deep-learning stack (CUDA 12.1 build verified on RTX 4060 Laptop).
+# On a machine without the matched wheels, install torch first per
+# https://pytorch.org/get-started/locally/ then `pip install -r requirements.txt`.
+torch==2.5.1
+torchvision==0.20.1
+Pillow==12.3.0
